@@ -211,7 +211,7 @@ const TaskList: React.FC<TaskListProps> = ({
   return (
     <div className="space-y-4">
       {/* Header with stats */}
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between max-w-[360px] sm:max-w-none">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between max-w-[380px] sm:max-w-none">
         <div>
           <h2 className="text-xl font-semibold text-gray-900">Tasks</h2>
           <div className="mt-1 flex flex-wrap gap-4 text-sm text-gray-500">
@@ -255,7 +255,7 @@ const TaskList: React.FC<TaskListProps> = ({
       </div>
 
       {/* Filters */}
-      <div className="flex flex-col gap-3 rounded-lg border border-gray-200 bg-gray-50 p-4 sm:flex-row sm:items-center max-w-[360px] sm:max-w-none">
+      <div className="flex flex-col gap-3 rounded-lg border border-gray-200 bg-gray-50 p-4 sm:flex-row sm:items-center max-w-[380px] sm:max-w-none">
         {/* Search */}
         <div className="flex-1">
           <input
@@ -263,7 +263,7 @@ const TaskList: React.FC<TaskListProps> = ({
             placeholder="Search tasks..."
             value={searchTerm}
             onChange={(e) => handleSearchChange(e.target.value)}
-            className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm placeholder-blue-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
           />
         </div>
 
@@ -271,7 +271,7 @@ const TaskList: React.FC<TaskListProps> = ({
         <select
           value={filters.status || ""}
           onChange={(e) => handleStatusFilterChange(e.target.value as any)}
-          className="rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="rounded-md border border-gray-300 px-3 py-2 text-sm text-black placeholder-blue-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
         >
           <option value="">All Status</option>
           <option value={TASK_STATUS.PENDING}>Pending</option>
@@ -283,7 +283,7 @@ const TaskList: React.FC<TaskListProps> = ({
         <select
           value={filters.priority || ""}
           onChange={(e) => handlePriorityFilterChange(e.target.value as any)}
-          className="rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="rounded-md border border-gray-300 px-3 py-2 text-sm text-black placeholder-blue-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
         >
           <option value="">All Priority</option>
           <option value={TASK_PRIORITY.LOW}>Low</option>
@@ -293,7 +293,7 @@ const TaskList: React.FC<TaskListProps> = ({
       </div>
 
       {/* Sort Controls */}
-      <div className="flex items-center gap-2 text-sm max-w-[360px] sm:max-w-none">
+      <div className="flex items-center gap-2 text-sm max-w-[380px] sm:max-w-none">
         <span className="text-gray-500">Sort by:</span>
         <button
           onClick={() => handleSortChange("title")}

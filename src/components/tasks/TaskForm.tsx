@@ -239,7 +239,7 @@ const TaskForm: React.FC<TaskFormProps> = ({
             placeholder="Enter task description (optional)..."
             rows={4}
             disabled={isLoading}
-            className={`block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 ${
+            className={`block w-full text-black rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 ${
               touched.description && formErrors.description
                 ? "border-red-300 focus:border-red-500 focus:ring-red-500"
                 : ""
@@ -271,7 +271,7 @@ const TaskForm: React.FC<TaskFormProps> = ({
             value={formData.status}
             onChange={(e) => handleInputChange("status", e.target.value)}
             disabled={isLoading}
-            className="block p-2 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-50 disabled:text-gray-500"
+            className="block p-2 w-full text-black rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-50 disabled:text-gray-500"
           >
             <option value={TASK_STATUS.PENDING}>Pending</option>
             <option value={TASK_STATUS.IN_PROGRESS}>In Progress</option>
@@ -294,7 +294,7 @@ const TaskForm: React.FC<TaskFormProps> = ({
             value={formData.priority}
             onChange={(e) => handleInputChange("priority", e.target.value)}
             disabled={isLoading}
-            className="block p-2 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-50 disabled:text-gray-500"
+            className="block p-2 w-full text-black rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-50 disabled:text-gray-500"
           >
             <option value={TASK_PRIORITY.LOW}>Low</option>
             <option value={TASK_PRIORITY.MEDIUM}>Medium</option>

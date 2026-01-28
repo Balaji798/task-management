@@ -79,7 +79,7 @@ export default function Dashboard() {
 
             {/* Statistics Cards */}
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8">
-              <div className="bg-white overflow-hidden shadow rounded-lg max-w-[360px] sm:max-w-none">
+              <div className="bg-white overflow-hidden shadow rounded-lg max-w-[380px] sm:max-w-none">
                 <div className="p-4 sm:p-5">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
@@ -113,7 +113,7 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              <div className="bg-white overflow-hidden shadow rounded-lg max-w-[360px] sm:max-w-none">
+              <div className="bg-white overflow-hidden shadow rounded-lg max-w-[380px] sm:max-w-none">
                 <div className="p-5">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
@@ -147,7 +147,7 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              <div className="bg-white overflow-hidden shadow rounded-lg max-w-[360px] sm:max-w-none">
+              <div className="bg-white overflow-hidden shadow rounded-lg max-w-[380px] sm:max-w-none">
                 <div className="p-5">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
@@ -181,7 +181,7 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              <div className="bg-white overflow-hidden shadow rounded-lg max-w-[360px] sm:max-w-none">
+              <div className="bg-white overflow-hidden shadow rounded-lg max-w-[380px] sm:max-w-none">
                 <div className="p-5">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
@@ -217,7 +217,7 @@ export default function Dashboard() {
             </div>
 
             {/* Progress Overview */}
-            <div className="bg-white shadow rounded-lg mb-8 max-w-[360px] sm:max-w-none">
+            <div className="bg-white shadow rounded-lg mb-8 max-w-[380px] sm:max-w-none">
               <div className="px-4 py-5 sm:p-6">
                 <h3 className="text-lg leading-6 font-medium text-gray-900 mb-4">
                   Progress Overview
@@ -265,7 +265,7 @@ export default function Dashboard() {
             </div>
 
             {/* Quick Actions */}
-            <div className="mb-8 max-w-[360px] sm:max-w-none">
+            <div className="mb-8 max-w-[380px] sm:max-w-none">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-xl font-semibold text-gray-900">
                   Quick Actions
