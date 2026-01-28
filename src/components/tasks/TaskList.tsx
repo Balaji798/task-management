@@ -211,7 +211,7 @@ const TaskList: React.FC<TaskListProps> = ({
   return (
     <div className="space-y-4">
       {/* Header with stats */}
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between max-w-[360px] sm:max-w-none">
         <div>
           <h2 className="text-xl font-semibold text-gray-900">Tasks</h2>
           <div className="mt-1 flex flex-wrap gap-4 text-sm text-gray-500">
@@ -255,7 +255,7 @@ const TaskList: React.FC<TaskListProps> = ({
       </div>
 
       {/* Filters */}
-      <div className="flex flex-col gap-3 rounded-lg border border-gray-200 bg-gray-50 p-4 sm:flex-row sm:items-center">
+      <div className="flex flex-col gap-3 rounded-lg border border-gray-200 bg-gray-50 p-4 sm:flex-row sm:items-center max-w-[360px] sm:max-w-none">
         {/* Search */}
         <div className="flex-1">
           <input
@@ -293,7 +293,7 @@ const TaskList: React.FC<TaskListProps> = ({
       </div>
 
       {/* Sort Controls */}
-      <div className="flex items-center gap-2 text-sm">
+      <div className="flex items-center gap-2 text-sm max-w-[360px] sm:max-w-none">
         <span className="text-gray-500">Sort by:</span>
         <button
           onClick={() => handleSortChange("title")}

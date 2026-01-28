@@ -121,7 +121,7 @@ const TaskItem: React.FC<TaskItemProps> = ({
 
   return (
     <div
-      className={`border-b p-2 border-gray-200 py-3 transition-all hover:bg-gray-50 ${isLoading ? "opacity-50" : ""}`}
+      className={`border-b p-2 border-gray-200 py-3 transition-all hover:bg-gray-50 max-w-[360px] sm:max-w-none ${isLoading ? "opacity-50" : ""}`}
     >
       <div className="flex items-center justify-between">
         {/* Left side - Title and Description */}
