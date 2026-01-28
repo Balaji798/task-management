@@ -66,7 +66,7 @@ const Header: React.FC = () => {
           {/* User Section */}
           <div className="flex items-center space-x-4">
             {user ? (
-              <div className="flex items-center space-x-3">
+              window.innerWidth>756 &&<div className="flex items-center space-x-3">
                 {/* User Avatar */}
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
@@ -93,12 +93,12 @@ const Header: React.FC = () => {
                 </div>
 
                 {/* Logout Button */}
-                <Button
+                 <Button
                   variant="ghost"
                   size="sm"
                   onClick={handleLogout}
                   loading={isLoading}
-                  className="hidden sm:flex"
+                  className="hidden sm:flex w-full justify-start mt-2"
                 >
                   <svg
                     className="w-4 h-4 mr-2"
