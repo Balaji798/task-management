@@ -9,6 +9,7 @@ export async function GET(
   { params }: { params: { id: string } },
 ) {
   try {
+    const { id } = await params;
     const { user, error: authError } = await authenticateRequest(request);
     if (authError) {
       return NextResponse.json({ error: authError }, { status: 401 });
@@ -17,7 +18,7 @@ export async function GET(
     const { data: task, error } = await supabase
       .from("tasks")
       .select("*")
-      .eq("id", params.id)
+      .eq("id", id)
       .eq("user_id", user!.id)
       .single();
 
